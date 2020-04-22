@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // 按模块管理引用路由
-import demo from './demo'
+import demo from '../views/Demo'
 
 Vue.use(Router)
 
@@ -19,12 +19,11 @@ export default new Router({
         },
         {
             path: '/',
-            component: () =>
-                import ('@/views/Home'),
+            name: 'demo',
+            component: demo,
             meta: {
                 title: 'demo页面'
-            },
-            children: [...demo]
+            }
         }
     ]
 })

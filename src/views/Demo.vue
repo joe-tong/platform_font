@@ -1,29 +1,69 @@
 <template>
   <div id="demo">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="head">
+      <span class="banner">图灵工作室|Tuling stadio</span>
+      <span class="person">个人中心</span>
     </div>
-    <router-view/>
+    <div id="body">
+      <div class="wx_common"></div>
+      <div class="wx_login"></div>
+    </div>
+    <div id="foot"></div>
   </div>
 </template>
 
 <style lang="less" scoped>
-#demo {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+#head {
+  height: 2.2em;
+  width: 100%;
+  background-color: rgb(143, 126, 104);
+  font-size: 1.5em;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.person {
+  padding-left: 45%;
+  line-height: 2em;
+  font-family: KaiTi;
+}
+.banner {
+  padding-left: 15%;
+  line-height: 2em;
+  font-family: KaiTi;
+}
+#body {
+  background-color: grey;
+  height: 39.5em;
+}
+#foot {
+  height: 2em;
+  background-color: red;
+}
+.boxShadow {
+  padding: 0 16px 10px;
+}
+.el-tabs__item {
+  color: #2f353b !important;
+  font-size: 16px !important;
+}
+.Information_box {
+  width: 100%;
+  height: 44px;
+  border-bottom: 1px solid #ccc;
+}
+.Information {
+  float: left;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 42px;
+  border-bottom: 3px solid #42a5f5;
+}
+.el-pagination {
+  float: right;
 }
 </style>
+
+<script>
+export default {
+  methods: {}
+}
+</script>
+
