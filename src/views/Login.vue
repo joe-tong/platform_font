@@ -4,12 +4,7 @@
       <span class="banner">图灵工作室|Tuling stadio</span>
       <span class="person">个人中心</span>
     </div>
-    <div id="body">
-       <qr>
-
-
-       </qr>
-    </div>
+    <qr></qr>
     <div id="foot"></div>
   </div>
 </template>
@@ -20,7 +15,7 @@
   height: 100%;
 }
 #head {
-  height:3vw;  
+  height: 3vw;
   width: 100%;
   background-color: rgb(143, 126, 104);
   font-size: 1.5em;
@@ -35,53 +30,21 @@
   line-height: 3vw;
   font-family: KaiTi;
 }
-#body {
-  background-color: grey;
-  height: 43vw;
-}
+
 #foot {
   height: 2vw;
-  background-color:cornflowerblue;
-}
-.boxShadow {
-  padding: 0 16px 10px;
-}
-.el-tabs__item {
-  color: #2f353b !important;
-  font-size: 16px !important;
-}
-.Information_box {
-  width: 100%;
-  height: 44px;
-  border-bottom: 1px solid #ccc;
-}
-.Information {
-  float: left;
-  font-size: 16px;
-  display: inline-block;
-  line-height: 42px;
-  border-bottom: 3px solid #42a5f5;
-}
-.el-pagination {
-  float: right;
+  background-color: cornflowerblue;
 }
 </style>
 
 <script>
-import QR from '../views/QR'
+import qr from '../views/Qr'
 
 export default {
-  name: 'qr',
   components: {
-    QR
+    qr
   },
-  methods: {
-    
-
-  }
-
-
-
+  methods: {}
 }
 </script>
 
