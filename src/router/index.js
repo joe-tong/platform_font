@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // 按模块管理引用路由
-import demo from '../views/Demo'
+import Login from '../views/Login'
 
 Vue.use(Router)
 
@@ -19,10 +19,10 @@ export default new Router({
         },
         {
             path: '/',
-            name: 'demo',
-            component: demo,
+            name: 'Login',
+            component: Login,
             meta: {
-                title: 'demo页面'
+                title: '登录页面'
             }
         }
     ]
