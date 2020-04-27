@@ -2,10 +2,12 @@
   <div id="demo">
     <div id="head">
       <span class="banner">图灵工作室|Tuling stadio</span>
-      <span class="main">首页</span>
-      <span class="person">个人中心</span>
+      <span class="main" @click="main">首页</span>
+      <span class="person" @click="Person">个人中心</span>
       <span class="task" @click="publish">发布任务</span>
       <span class="login" @click="login">登录</span>
+      <span >|</span>
+      <span class="register" @click="register">注册</span>
     </div>
     <!-- <div id="foot"></div> -->
   </div>
@@ -73,15 +75,20 @@
   cursor: pointer;
   color: burlywood;
 }
+.register {
+  line-height: 3vw;
+  font-family: KaiTi;
+}
+.register:hover {
+  cursor: pointer;
+  color: burlywood;
+}
 </style>
 
 <script>
-import qr from '../views/Qr'
+
 
 export default {
-  components: {
-    qr
-  },
   methods: {
     publish() {
       this.$router.push({
@@ -91,6 +98,16 @@ export default {
     login() {
       this.$router.push({
         name: 'login'
+      })
+    },
+    main(){
+       this.$router.push({
+        name: 'home'
+      })
+    },
+    Person(){
+       this.$router.push({
+        name: 'person'
       })
     }
   }

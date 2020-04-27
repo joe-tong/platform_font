@@ -5,6 +5,7 @@ import Router from 'vue-router'
 import Login from '../views/Login'
 import Task from '../views/Task'
 import Home from '../views/Home'
+import Person from '../views/Person'
 
 Vue.use(Router)
 
@@ -41,6 +42,14 @@ export default new Router({
             component: Login,
             meta: {
                 title: '登录'
+            }
+        },
+        {
+            path: '/person',
+            name: 'person',
+            component: Person,
+            meta: {
+                title: '个人中心'
             }
         },
     ]

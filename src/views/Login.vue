@@ -5,10 +5,10 @@
 </template>
 
 <style lang="less" scoped>
-</style>
+</style>·
 
 <script>
-import qr from '../views/Qr'
+import qr from '../views/QR'
 
 export default {
   components: {
