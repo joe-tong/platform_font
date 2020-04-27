@@ -63,7 +63,7 @@
 import login_form from '../views/form/Login_form'
 
 export default {
-  name:"qr",
+  name:"Qr",
   props: {},
   components: {
     login_form
