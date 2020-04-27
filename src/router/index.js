@@ -3,6 +3,8 @@ import Router from 'vue-router'
 
 // 按模块管理引用路由
 import Login from '../views/Login'
+import Task from '../views/Task'
+import Home from '../views/Home'
 
 Vue.use(Router)
 
@@ -19,11 +21,27 @@ export default new Router({
         },
         {
             path: '/',
-            name: 'Login',
+            name: 'home',
+            component: Home,
+            meta: {
+                title: '首页'
+            }
+        },
+        {
+            path: '/task',
+            name: 'task',
+            component: Task,
+            meta: {
+                title: '发布任务'
+            }
+        },
+        {
+            path: '/login',
+            name: 'login',
             component: Login,
             meta: {
-                title: '登录页面'
+                title: '登录'
             }
-        }
+        },
     ]
 })
